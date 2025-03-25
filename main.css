@@ -184,3 +184,62 @@ footer a:hover {
         border-bottom: none;
     }
 }
+
+@media only screen and (max-width: 480px){
+    .navbar {
+        height: 40px;
+        padding-top: 0;
+    }
+   
+    .navbar{
+        box-shadow:0 3px 9px 3px rgba(0, 0, 0, 0.1) ;
+        /* display: none; */
+    }
+    .navbar-brand img{
+        width: 30px;
+    }
+    .navbar-brand span{
+        letter-spacing: 2px;
+        font-family: var(--sm-font);
+    }
+    .nav-link:hover{
+        color: var(--pink)!important;
+    }
+    .nav-item{
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-btns {
+        display: block;
+    }
+    .navbar-toggler {
+        display: none; /* Hide the hamburger icon */
+      }
+}
+
+/* on screen size less than 500px, hide hamburger icons and reduce logo size and display nav icons inside the hamburger */
+
+/* CSS for screens smaller than 480px */
+@media (max-width: 380px) {
+    .navbar-brand img {
+      height: 30px; /* Reduce logo size */
+    }
+    .navbar-toggler {
+      display: none; /* Hide the hamburger icon */
+    }
+    .nav-btns {
+      display: flex; /* Show nav-btns */
+      font-size: 1rem;
+    }
+    .collapse {
+      display: flex; /* Ensure nav-btns are shown */
+    }
+    .nav-btns button {
+      margin: 0 5px; /* Add spacing */
+    }
+
+    .fw-lighter .ms-2 {
+        font-size: 12px;
+    }
+  }
+  
