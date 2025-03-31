@@ -229,7 +229,7 @@ footer a:hover {
       display: none; /* Hide the hamburger icon */
     }
     .nav-btns {
-      display: flex; /* Show nav-btns */
+      display: none; /* Show nav-btns */
       font-size: 1rem;
     }
     .collapse {
@@ -240,11 +240,14 @@ footer a:hover {
     }
 
     .fw-lighter .ms-2 {
-        font-size: 12px;
+        font-size: 8px;
     }
     .site-name{
         word-spacing: normal;
-        font-size: 12px;
+        font-size: 8px;
+    }
+    body{
+        font-size: 8px;
     }
   }
   
